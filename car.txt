@@ -1,7 +1,29 @@
 car
 
 
-id
-type_car
-count_m
+id - BIGINT - UNSIGNED - PRIMARY_KEY - AUTO_INCREMENT - UNIQUE NOTNULL
+year - DATE - NULL
+type_car - VARCHAR
+type_fuel - VARCHAR
+type_body - VARCHAR
+transmission - VARCHAR - NOTNULL
+count_m - DOUBLE(6,3) - UNSIGNED - DEFAULT(0) - NOTNULL
+conditions - TEXT - NOT NULL
+description - TEXT - NULL
+price - UNSIGNED - DECIMAL(5,3) - NULL
+producer - VARCHAR - NOTNULL
+accessories - TEXT - NULL
+country_of_origin - VARCHAR - NULL
+license_plate - VARCHAR
+hp - SMALLINT - UNSIGNED - DEFAULT(0) - NOTNULL
+engine_displacement - UNSIGNED - DECIMAL(3,1) - NULL
+color - VARCHAR - NULL
+doors - VARCHAR - NULL
+seats - VARCHAR - NULL
+exterior_color - VARCHAR - NULL
+interior_color -  VARCHAR - NULL
+stock - BIGINT - UNSIGNED - DEFAULT(0) - NOTNULL
+created_at - DATETIME - NOT NULL
+updated_at - DATETIME - NOT NULL
+
 
